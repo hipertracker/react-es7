@@ -19,6 +19,12 @@ $ npm run-script bundle
 $ http-server dist/
 ```
 
+Test:
+
+```
+$ npm test
+```
+
 Open: `http://localhost:8080`
 
 * All JavaScript files are transpiled with 6to5 library with enabled experimental ES7 syntax (see: https://6to5.org/features.html).
