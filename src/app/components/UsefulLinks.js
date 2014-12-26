@@ -1,6 +1,7 @@
 let React = require('react');
 let Reflux = require('reflux');
 
+import LinksActions from '../actions/LinksActions';
 import LinksStore from '../stores/LinksStore';
 import {m} from '../lib/tools';
 
@@ -24,6 +25,9 @@ let UsefulLinks = React.createClass({
     },
     linksUpdate(data) {
         this.setState({links: data.links});
+    },
+    componentDidMount() {
+        LinksActions.loadData();
     },
     render() {
         if (!this.state.links.length) {

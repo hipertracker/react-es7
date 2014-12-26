@@ -7,7 +7,7 @@ npm install
 Usage:
 
 ```bash
-npm run-script dev
+npm run-script serve
 ```
 
 Open `http://localhost:4200`
@@ -15,7 +15,7 @@ Open `http://localhost:4200`
 or
 
 ```
-$ npm run-script pro
+$ npm run-script bundle
 $ http-server dist/
 ```
 
