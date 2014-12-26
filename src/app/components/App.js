@@ -1,14 +1,18 @@
 let React = require('react');
-import UsefulLinks from './UsefulLinks';
 
-var App = React.createClass({
+let RouteHandler = require('react-router').RouteHandler;
+
+import Menu from './Menu';
+
+let App = React.createClass({
     render() {
         let styles = {
-            margin: 20
+            margin: 10
         };
         return (
             <section style={styles}>
-                <UsefulLinks title="Useful Links"/>
+                <Menu/>
+                <RouteHandler/>
             </section>
         )
     }

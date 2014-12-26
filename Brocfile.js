@@ -8,49 +8,36 @@ var compileSass = require('broccoli-sass');
 var esTranspiler = require('broccoli-6to5-transpiler');
 
 var fastBrowserify = require('broccoli-fast-browserify');
-var browserify = require('broccoli-browserify');
 
-//var uglifyJavaScript = require('broccoli-uglify-js');
 var uglifyJavaScript = require('broccoli-uglify-sourcemap');
 
 var gzipFiles = require('broccoli-gzip');
-
 
 var staticFiles = new Funnel('src', {
     files: ['index.html']
 });
 
-//var jqueryFiles = new Funnel('node_modules/jquery/dist/cdn', {
-//    include: [
-//        new RegExp(/\.min\.(js|map)$/),
-//    ],
-//    destDir: 'vendor/jquery'
-//});
-//var semantiUiFiles = new Funnel('node_modules/semantic-ui/dist', {
-//    exclude: [new RegExp(/components/)],
-//    include: [
-//        new RegExp(/\.min\.(js|css)$/),
-//        new RegExp(/themes/)
-//    ],
-//    destDir: 'vendor/semantic-ui'
-//});
-//var fontAwesomeFiles = new Funnel('node_modules/font-awesome', {
-//    include: [
-//        new RegExp(/min\.css$/),
-//        new RegExp(/fonts/)
-//    ],
-//    destDir: 'vendor/font-awesome'
-//});
-
-var bootstrapFiles = new Funnel('node_modules/bootstrap/dist', {
+var jqueryFiles = new Funnel('bower_components/jquery/dist', {
     include: [
-        new RegExp(/css\/.+\.min\.css$/),
-        new RegExp(/css\/.+\.map$/),
+        new RegExp(/\.min\.(js|map)$/),
+    ],
+    destDir: 'vendor/jquery'
+});
+var semanticUIFiles = new Funnel('bower_components/semantic-ui/dist', {
+    include: [
+        new RegExp(/\.min\.(js|css)$/),
+        new RegExp(/themes/)
+    ],
+    destDir: 'vendor/semantic-ui'
+});
+var fontAwesomeFiles = new Funnel('bower_components/font-awesome', {
+    include: [
+        new RegExp(/min\.css$/),
         new RegExp(/fonts/)
     ],
-    destDir: 'vendor/bootstrap'
+    destDir: 'vendor/font-awesome'
 });
-vendorFiles = mergeTrees([bootstrapFiles]);
+vendorFiles = mergeTrees([jqueryFiles, semanticUIFiles, fontAwesomeFiles]);
 
 var cssFiles = compileSass(['src'], 'styles/app.scss', 'styles/app.css');
 
@@ -59,10 +46,18 @@ var jsFiles = new Funnel('src', {
     include: [new RegExp(/\.js$/)]
 });
 jsFiles = esTranspiler(jsFiles, {experimental: true});
-jsFiles = browserify(jsFiles, {
-    entries: ['./index'],
-    outputFile: 'index.js'
+//jsFiles = browserify(jsFiles, {
+//    entries: ['./index'],
+//    outputFile: 'index.js'
+//});
+jsFiles = fastBrowserify(jsFiles, {
+    bundles: {
+        'index.js': {
+            entryPoints: ['**/index.js']
+        }
+    }
 });
+
 
 var env = require('broccoli-env').getEnv();
 

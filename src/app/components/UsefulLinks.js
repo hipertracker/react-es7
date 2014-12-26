@@ -12,12 +12,6 @@ let UsefulLinks = React.createClass({
     propTypes: {
         title: T.string.isRequired
     },
-    getDefaultProps() {
-        return {
-            title: 'Useful Links',
-            style: {backgroundColor: 'white'}
-        };
-    },
     getInitialState() {
         return {
             links: []
@@ -35,7 +29,7 @@ let UsefulLinks = React.createClass({
         }
         let styles = {
             item: {
-                paddingLeft: '10px'
+                paddingLeft: 30
             }
         };
         let style = m(styles.item, this.props.style);
@@ -44,10 +38,10 @@ let UsefulLinks = React.createClass({
                 <a href={item.url} target="_blank">{item.title}</a>
             </li>);
         return (
-            <section>
+            <div class="ui grid">
                 <h4>{this.props.title}</h4>
                 <ul style={style}>{items}</ul>
-            </section>
+            </div>
         );
     }
 });

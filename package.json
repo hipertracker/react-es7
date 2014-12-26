@@ -1,7 +1,7 @@
 {
   "name": "react-es7",
-  "version": "0.0.2",
-  "description": "Example of using React + Reflux + ES6 with experimental ES7 syntax + Jest.",
+  "version": "0.0.3",
+  "description": "Example of using React + Reflux + ES6 with experimental ES7 syntax + Jest",
   "main": "src/index.js",
   "scripts": {
     "test": "jest",
@@ -28,7 +28,6 @@
     "6to5-jest": "git://github.com/hipertracker/6to5-jest",
     "broccoli": "^0.13.3",
     "broccoli-6to5-transpiler": "^0.1.1",
-    "broccoli-browserify": "^0.1.0",
     "broccoli-cli": "0.0.1",
     "broccoli-env": "0.0.1",
     "broccoli-fast-browserify": "^0.2.3",
@@ -44,10 +43,9 @@
     "jest-cli": "^0.2.1"
   },
   "dependencies": {
-    "bootstrap": "^3.3.1",
     "lodash": "^2.4.1",
     "react": "*",
-    "react-bootstrap": "^0.13.0",
+    "react-router": "^0.11.6",
     "reflux": "*",
     "rimraf": "^2.2.8"
   }
