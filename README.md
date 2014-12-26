@@ -21,11 +21,11 @@ $ http-server dist/
 
 Open: `http://localhost:8080`
 
-* All JavaScript files are transpiled with 6to5 library with enabled experimental ES7 (see: https://6to5.org/features.html).
+* All JavaScript files are transpiled with 6to5 library with enabled experimental ES7 syntax (see: https://6to5.org/features.html).
 
-* For using experimental ES7 code in Jest tests, the project is using my fork of `6to5-jest`package (https://github.com/hipertracker/6to5-jest)
+* For using experimental ES7 code in `Jest` tests, the project is using my fork of `6to5-jest`package (https://github.com/hipertracker/6to5-jest)
 
-* The workflow and communication between components is built using Reflux (https://github.com/spoike/refluxjs), a slighty modified (improved) Flux paradigm.
+* The workflow and communication between components is built using `Reflux` (https://github.com/spoike/refluxjs), a slighty modified (improved) Flux paradigm.
 
 * Unit testing is provided by (recomended by Facebook) `Jest` library (https://facebook.github.io/jest/)
 
