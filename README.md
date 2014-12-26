@@ -25,16 +25,15 @@ Open: `http://localhost:8080`
 
 * For using experimental ES7 code in Jest tests, the project is using my fork of `6to5-jest`package (https://github.com/hipertracker/6to5-jest)
 
-* The workflow and communication between components is built using Reflux (https://github.com/spoike/refluxjs), a slighty modified Flux paradigm.
+* The workflow and communication between components is built using Reflux (https://github.com/spoike/refluxjs), a slighty modified (improved) Flux paradigm.
 
 * Unit testing is provided by (recomended by Facebook) `Jest` library (https://facebook.github.io/jest/)
 
 * The example is using Bootstrap 3 React components thanks to `react-bootstrap` (http://react-bootstrap.github.io/).
 
-
 Todo:
 
-* Add `Semantic-UI` (http://semantic-ui.com/). There is promising `react-semantify` (http://react-components.com/component/react-semantify) but it is not as mature as `react-bootstrap` yet.
+* Add `Semantic-UI` (http://semantic-ui.com/).There is a promising `react-semantify`  (http://react-components.com/component/react-semantify) library, but it is not as mature as `react-bootstrap`, yet.
 * Add `Yeoman` project with options to choose SASS/Less/Stylus and Bootstrap/Semantic-UI
 * Add  more unit tests showing `Jest` testing ES5/ES7 code.
 
