@@ -35,6 +35,6 @@ Todo:
 
 * Add  more unit tests showing `Jest` testing ES5/ES7 code.
 * Add `react-router` (https://github.com/rackt/react-router) for full SPA
-* Add `Semantic-UI` (http://semantic-ui.com/).There is a promising `react-semantify`  (http://react-components.com/component/react-semantify) library, but it is not as mature as `react-bootstrap`, yet.
+* Add `Semantic-UI` (http://semantic-ui.com/). There is a promising `react-semantify`  (http://react-components.com/component/react-semantify) library, but it is not as mature as `react-bootstrap`, yet.
 * Add `Yeoman` project with options to choose SASS/Less/Stylus and Bootstrap/Semantic-UI
 
