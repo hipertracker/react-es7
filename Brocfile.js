@@ -1,43 +1,39 @@
-var rimraf = require('rimraf');
-
-var mergeTrees = require('broccoli-merge-trees');
-var Funnel = require('broccoli-funnel');
-
-var compileSass = require('broccoli-sass');
-
-var esTranspiler = require('broccoli-6to5-transpiler');
-
-var fastBrowserify = require('broccoli-fast-browserify');
-
-var uglifyJavaScript = require('broccoli-uglify-sourcemap');
-
-var gzipFiles = require('broccoli-gzip');
+var rimraf = require('rimraf'),
+    mergeTrees = require('broccoli-merge-trees'),
+    Funnel = require('broccoli-funnel'),
+    compileSass = require('broccoli-sass'),
+    esTranspiler = require('broccoli-6to5-transpiler'),
+    fastBrowserify = require('broccoli-fast-browserify'),
+    uglifyJavaScript = require('broccoli-uglify-sourcemap'),
+    gzipFiles = require('broccoli-gzip'),
+    env = require('broccoli-env').getEnv();
 
 var staticFiles = new Funnel('src', {
     files: ['index.html']
 });
 
+// build vendor/*
 var jqueryFiles = new Funnel('bower_components/jquery/dist', {
-    include: [
-        new RegExp(/\.min\.(js|map)$/),
-    ],
-    destDir: 'vendor/jquery'
-});
-var semanticUIFiles = new Funnel('bower_components/semantic-ui/dist', {
-    include: [
-        new RegExp(/\.min\.(js|css)$/),
-        new RegExp(/themes/)
-    ],
-    destDir: 'vendor/semantic-ui'
-});
-var fontAwesomeFiles = new Funnel('bower_components/font-awesome', {
-    include: [
-        new RegExp(/min\.css$/),
-        new RegExp(/fonts/)
-    ],
-    destDir: 'vendor/font-awesome'
-});
-vendorFiles = mergeTrees([jqueryFiles, semanticUIFiles, fontAwesomeFiles]);
+        include: [
+            new RegExp(/\.min\.(js|map)$/),
+        ],
+        destDir: 'vendor/jquery'
+    }),
+    semanticUIFiles = new Funnel('bower_components/semantic-ui/dist', {
+        include: [
+            new RegExp(/\.min\.(js|css)$/),
+            new RegExp(/themes/)
+        ],
+        destDir: 'vendor/semantic-ui'
+    }),
+    fontAwesomeFiles = new Funnel('bower_components/font-awesome', {
+        include: [
+            new RegExp(/min\.css$/),
+            new RegExp(/fonts/)
+        ],
+        destDir: 'vendor/font-awesome'
+    });
+var vendorFiles = mergeTrees([jqueryFiles, semanticUIFiles, fontAwesomeFiles]);
 
 var cssFiles = compileSass(['src'], 'styles/app.scss', 'styles/app.css');
 
@@ -45,11 +41,9 @@ var jsFiles = new Funnel('src', {
     exclude: [new RegExp(/__tests__/)],
     include: [new RegExp(/\.js$/)]
 });
+
 jsFiles = esTranspiler(jsFiles, {experimental: true});
-//jsFiles = browserify(jsFiles, {
-//    entries: ['./index'],
-//    outputFile: 'index.js'
-//});
+
 jsFiles = fastBrowserify(jsFiles, {
     bundles: {
         'index.js': {
@@ -57,9 +51,6 @@ jsFiles = fastBrowserify(jsFiles, {
         }
     }
 });
-
-
-var env = require('broccoli-env').getEnv();
 
 if (env === 'production') {
     jsFiles = uglifyJavaScript(jsFiles);
