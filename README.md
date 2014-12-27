@@ -18,6 +18,7 @@ or
 $ npm run-script bundle
 $ http-server dist/
 ```
+and open `http://localhost:8080`
 
 Test:
 
