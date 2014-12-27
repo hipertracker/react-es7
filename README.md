@@ -26,8 +26,6 @@ Test:
 $ npm test
 ```
 
-Open: `http://localhost:8080`
-
 * All JavaScript files are transpiled with 6to5 library with enabled experimental ES7 syntax (see: https://6to5.org/features.html).
 * For using experimental ES7 code in `Jest` tests, the project is using my fork of `6to5-jest`package (https://github.com/hipertracker/6to5-jest)
 * The workflow and communication between components is built using `Reflux` (https://github.com/spoike/refluxjs), a slighty modified (improved) Flux paradigm. See: http://blog.krawaller.se/posts/reflux-refinement/
