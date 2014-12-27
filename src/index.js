@@ -12,9 +12,9 @@ import App from './app/components/App';
 import Home from './app/components/Home';
 import About from './app/components/About';
 
-var Router = require('react-router');
-var Route = Router.Route;
-var DefaultRoute = Router.DefaultRoute;
+let Router = require('react-router');
+let Route = Router.Route;
+let DefaultRoute = Router.DefaultRoute;
 
 let routes = (
     <Route name="app" path="/" handler={App}>
