@@ -1,4 +1,4 @@
-jest.dontMock('../sum'); // of jest.autoMockOff();
+jest.dontMock('../sum'); // or jest.autoMockOff();
 
 var sum = require('../sum')['default'];
 
