@@ -12,10 +12,10 @@ $ broccoli serve
 
 Open `http://localhost:4200`
 
-If you like to use the build
+If you like to generate mangled, compressed, production build
 
 ```
-$ broccoli build dist
+$ BROCCOLI_ENV=production broccoli build dist
 $ http-server dist/
 ```
 

@@ -4,7 +4,7 @@ var rimraf = require('rimraf'),
     compileSass = require('broccoli-sass'),
     esTranspiler = require('broccoli-6to5-transpiler'),
     fastBrowserify = require('broccoli-fast-browserify'),
-    uglifyJavaScript = require('broccoli-uglify-sourcemap'),
+    uglifyJavaScript = require('broccoli-uglify-js'),
     gzipFiles = require('broccoli-gzip'),
     env = require('broccoli-env').getEnv();
 
