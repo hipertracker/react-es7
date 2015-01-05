@@ -15,5 +15,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "semantic-ui": "~1.5.2",
+    "font-awesome": "~4.2.0"
+  }
 }
