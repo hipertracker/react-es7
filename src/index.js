@@ -1,4 +1,4 @@
-let React = require('react');
+const React = require('react');
 import {mount} from './app/lib/tools';
 
 // For mounting App component into <section id="app"></section> use:
@@ -12,11 +12,11 @@ import App from './app/components/App';
 import Home from './app/components/Home';
 import About from './app/components/About';
 
-let Router = require('react-router');
-let Route = Router.Route;
-let DefaultRoute = Router.DefaultRoute;
+const Router = require('react-router');
+const Route = Router.Route;
+const DefaultRoute = Router.DefaultRoute;
 
-let routes = (
+const routes = (
     <Route name="app" path="/" handler={App}>
         <Route name="home" handler={Home}/>
         <Route name="about" handler={About}/>

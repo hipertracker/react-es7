@@ -2,12 +2,12 @@ const React = require('react');
 const ReactRouter = require('react-router');
 const {Menu, Segment} = require('react-semantify');
 
-let RouteHandler = ReactRouter.RouteHandler;
-let Link = ReactRouter.Link;
+const RouteHandler = ReactRouter.RouteHandler;
+const Link = ReactRouter.Link;
 
 const App = React.createClass({
     render() {
-        let styles = {
+        const styles = {
             margin: 10
         };
         return (

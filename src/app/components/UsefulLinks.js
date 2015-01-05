@@ -26,13 +26,13 @@ const UsefulLinks = React.createClass({
         if (!this.state.links.length) {
             return <span/>;
         }
-        let styles = {
+        const styles = {
             item: {
                 paddingLeft: 30
             }
         };
-        let style = m(styles.item, this.props.style);
-        let items = this.state.links.map((item, key) =>
+        const style = m(styles.item, this.props.style);
+        const items = this.state.links.map((item, key) =>
             <li key={key}>
             {item.title} (<a href={item.url} target="_blank">{item.url}</a>)
             </li>);

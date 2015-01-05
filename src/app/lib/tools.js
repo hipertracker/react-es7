@@ -1,5 +1,5 @@
-let React = require('react');
-let _ = require('lodash');
+const React = require('react');
+const _ = require('lodash');
 
 // mounting a React component to a selector id location
 export function mount(component, location, argv = {}) {
@@ -8,12 +8,8 @@ export function mount(component, location, argv = {}) {
     } else {
         location = document.getElementById(location);
     }
-    console.log('@argv', argv);
-    console.log('@1', component);
     if (!React.isValidElement(component)) {
-        console.log('@2', component);
         component = React.createFactory(component);
-        console.log('@3', component);
     }
     React.render(component(argv), location);
 };
