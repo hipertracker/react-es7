@@ -1,13 +1,12 @@
-let React = require('react');
-let Reflux = require('reflux');
-
+const React = require('react');
+const Reflux = require('reflux');
 import LinksActions from '../actions/LinksActions';
 import LinksStore from '../stores/LinksStore';
 import {m} from '../lib/tools';
 
-let T = React.PropTypes;
+const T = React.PropTypes;
 
-let UsefulLinks = React.createClass({
+const UsefulLinks = React.createClass({
     mixins: [Reflux.listenTo(LinksStore, 'linksUpdate')],
     propTypes: {
         title: T.string.isRequired
@@ -38,7 +37,7 @@ let UsefulLinks = React.createClass({
                 <a href={item.url} target="_blank">{item.title}</a>
             </li>);
         return (
-            <div class="ui grid">
+            <div>
                 <h4>{this.props.title}</h4>
                 <ul style={style}>{items}</ul>
             </div>
