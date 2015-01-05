@@ -1,5 +1,5 @@
 const React = require('react');
-const ReactRouter = require('react-router')
+const ReactRouter = require('react-router');
 const {Menu, Segment} = require('react-semantify');
 
 let RouteHandler = ReactRouter.RouteHandler;
@@ -24,7 +24,10 @@ const App = React.createClass({
                 </Menu>
                 <RouteHandler/>
                 <Segment>
-                    Git: <a href="https://github.com/hipertracker/react-es7">https://github.com/hipertracker/react-es7</a>
+                    Git: &nbsp;
+                    <a href="https://github.com/hipertracker/react-es7">
+                        https://github.com/hipertracker/react-es7
+                    </a>
                 </Segment>
             </section>
         )
