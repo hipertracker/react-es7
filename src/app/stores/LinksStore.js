@@ -1,4 +1,4 @@
-const Reflux = require('reflux');
+import * as Reflux from 'reflux';
 import LinksActions from '../actions/LinksActions';
 
 const LinksStore = Reflux.createStore({

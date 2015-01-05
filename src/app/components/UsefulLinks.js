@@ -1,5 +1,5 @@
-const React = require('react');
-const Reflux = require('reflux');
+import * as React from 'react';
+import * as Reflux from 'reflux';
 import LinksActions from '../actions/LinksActions';
 import LinksStore from '../stores/LinksStore';
 import {m} from '../lib/tools';

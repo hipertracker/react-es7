@@ -1,4 +1,4 @@
-const Reflux = require('reflux');
+import * as Reflux from 'reflux';
 
 const LinksActions = Reflux.createActions([
     'loadData',

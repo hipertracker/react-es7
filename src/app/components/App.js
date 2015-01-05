@@ -1,6 +1,6 @@
-const React = require('react');
-const ReactRouter = require('react-router');
-const {Menu, Segment} = require('react-semantify');
+import * as React from 'react';
+import * as ReactRouter from 'react-router';
+import {Menu, Segment} from 'react-semantify';
 
 const RouteHandler = ReactRouter.RouteHandler;
 const Link = ReactRouter.Link;

@@ -1,6 +1,6 @@
-const React = require('react');
+import * as React from 'react';
 import UsefulLinks from './UsefulLinks';
-const {Segment} = require('react-semantify');
+import {Segment} from 'react-semantify';
 
 const Home = React.createClass({
     render() {
