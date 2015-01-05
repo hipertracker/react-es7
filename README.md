@@ -1,6 +1,7 @@
 Install
 
 ```
+npm install -g broccoli-cli
 npm install
 bower install
 ```
