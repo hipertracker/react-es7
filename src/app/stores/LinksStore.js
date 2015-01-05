@@ -1,7 +1,7 @@
-let Reflux = require('reflux');
+const Reflux = require('reflux');
 import LinksActions from '../actions/LinksActions';
 
-let LinksStore = Reflux.createStore({
+const LinksStore = Reflux.createStore({
     listenables: [LinksActions],
 
     onLoadDataSuccess: function (data) {

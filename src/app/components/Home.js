@@ -1,8 +1,7 @@
-let React = require('react');
-
+const React = require('react');
 import UsefulLinks from './UsefulLinks';
 
-let Home = React.createClass({
+const Home = React.createClass({
     render() {
         return (
             <section>

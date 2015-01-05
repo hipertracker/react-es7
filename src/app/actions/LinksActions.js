@@ -1,11 +1,11 @@
-let Reflux = require('reflux');
+const Reflux = require('reflux');
 
-let LinksActions = Reflux.createActions([
+const LinksActions = Reflux.createActions([
     'loadData',
     'loadDataSuccess'
 ]);
 
-let data = [
+const data = [
     {
         url: 'http://facebook.github.io/react/',
         title: 'React home page'

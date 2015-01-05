@@ -1,6 +1,6 @@
-let React = require('react');
+const React = require('react');
 
-let About = React.createClass({
+const About = React.createClass({
     render() {
         return (
             <section>

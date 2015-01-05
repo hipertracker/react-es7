@@ -1,8 +1,7 @@
-let React = require('react');
+const React = require('react');
+const Link = require('react-router').Link;
 
-let Link = require('react-router').Link;
-
-let Menu = React.createClass({
+const Menu = React.createClass({
     render() {
         return (
             <div className="ui menu">
