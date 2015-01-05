@@ -34,11 +34,11 @@ const UsefulLinks = React.createClass({
         let style = m(styles.item, this.props.style);
         let items = this.state.links.map((item, key) =>
             <li key={key}>
-                <a href={item.url} target="_blank">{item.title}</a>
+            {item.title} (<a href={item.url} target="_blank">{item.url}</a>)
             </li>);
         return (
             <div>
-                <h4>{this.props.title}</h4>
+                <b>{this.props.title}</b>
                 <ul style={style}>{items}</ul>
             </div>
         );

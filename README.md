@@ -6,18 +6,19 @@ npm install
 
 Usage:
 
-```bash
-npm run-script serve
+```
+$ broccoli serve
 ```
 
 Open `http://localhost:4200`
 
-or
+If you like to use the build
 
 ```
-$ npm run-script bundle
+$ broccoli build dist
 $ http-server dist/
 ```
+
 and open `http://localhost:8080`
 
 Test:
@@ -26,14 +27,18 @@ Test:
 $ npm test
 ```
 
-* All JavaScript files are transpiled with 6to5 library with enabled experimental ES7 syntax (see: https://6to5.org/features.html).
-* For using experimental ES7 code in `Jest` tests, the project is using my fork of `6to5-jest`package (https://github.com/hipertracker/6to5-jest)
-* The workflow and communication between components is built using `Reflux` (https://github.com/spoike/refluxjs), a slighty modified (improved) Flux paradigm. See: http://blog.krawaller.se/posts/reflux-refinement/
+Currently just a simple example of using unit tests in React for files using ES6/ES7 syntax.
+
+Details
+
+* All JavaScript files are transpiled with [6to5](https://6to5.org/) library with enabled [experimental ES7 syntax](https://6to5.org/features.html).
+* For using experimental ES7 code in [Jest](http://facebook.github.io/jest/docs/tutorial-react.html) tests, the project is using [my fork](https://github.com/hipertracker/6to5-jest) of `6to5-jest` package.
+* The workflow and communication between components is built using [Reflux](https://github.com/spoike/refluxjs), a slighty [improved](http://blog.krawaller.se/posts/reflux-refinement/) Flux paradigm.
 * Unit testing is provided by `Jest` (https://facebook.github.io/jest/)
-* The example is using Bootstrap 3 React components thanks to `react-bootstrap` (http://react-bootstrap.github.io/).
+* Using [Semantic-UI](http://semantic-ui.com/) framework with React components ([react-semantify](http://react-components.com/component/react-semantify))
 
 Todo:
 
-* Add  more unit tests showing `Jest` testing ES5/ES7 code.
-* Add `Yeoman` project with options to choose SASS/Less/Stylus and Bootstrap/Semantic-UI
+* Add  more unit tests showing [Jest](http://facebook.github.io/jest/) testing ES5/ES7 code.
+* Add [Yeoman](http://yeoman.io/) project with options to choose SASS/Less/Stylus and Bootstrap/Semantic-UI
 
