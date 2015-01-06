@@ -4,6 +4,12 @@
 
 Example of AMD based project using React + Reflux + routing + ES6 with experimental ES7 syntax + Semantic-UI
 
+* All JavaScript files are transpiled with [6to5](https://6to5.org/) library with enabled [experimental ES7 syntax](https://6to5.org/features.html).
+* For using experimental ES7 code in [Jest](http://facebook.github.io/jest/docs/tutorial-react.html) tests, the project is using [my fork](https://github.com/hipertracker/6to5-jest) of `6to5-jest` package.
+* The workflow and communication between components is built using [Reflux](https://github.com/spoike/refluxjs), a slighty [improved](http://blog.krawaller.se/posts/reflux-refinement/) Flux paradigm.
+* Unit testing is provided by [Jest](https://facebook.github.io/jest/).
+* Using [Semantic-UI](http://semantic-ui.com/) framework with React components ([react-semantify](http://react-components.com/component/react-semantify)).
+
 ## Install
 
 ```
@@ -36,14 +42,6 @@ $ npm test
 ```
 
 Currently just a simple example of using unit tests in React for files using ES6/ES7 syntax.
-
-## Details
-
-* All JavaScript files are transpiled with [6to5](https://6to5.org/) library with enabled [experimental ES7 syntax](https://6to5.org/features.html).
-* For using experimental ES7 code in [Jest](http://facebook.github.io/jest/docs/tutorial-react.html) tests, the project is using [my fork](https://github.com/hipertracker/6to5-jest) of `6to5-jest` package.
-* The workflow and communication between components is built using [Reflux](https://github.com/spoike/refluxjs), a slighty [improved](http://blog.krawaller.se/posts/reflux-refinement/) Flux paradigm.
-* Unit testing is provided by [Jest](https://facebook.github.io/jest/).
-* Using [Semantic-UI](http://semantic-ui.com/) framework with React components ([react-semantify](http://react-components.com/component/react-semantify)).
 
 ## Todo
 
