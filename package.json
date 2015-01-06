@@ -45,7 +45,7 @@
     "lodash": "^2.4.1",
     "react": "*",
     "reflux": "*",
-    "react-semantify": "*",
+    "react-semantify": "jessy1092/react-semantify",
     "react-router": "^0.11.6",
     "reactify": "^0.17.1",
     "rimraf": "^2.2.8"
