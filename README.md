@@ -10,6 +10,8 @@ Example of AMD based project using React + Reflux + routing + ES6 with experimen
 * Unit testing is provided by [Jest](https://facebook.github.io/jest/).
 * Using [Semantic-UI](http://semantic-ui.com/) framework with React components ([react-semantify](http://react-components.com/component/react-semantify)).
 
+If for some reasons you can't or don' want use Node for file processing, you can use pure AMD  version of that project: [hipertracker/react-es7-amd](https://github.com/hipertracker/react-es7-amd). It uses only a browser.
+
 ## Install
 
 ```
