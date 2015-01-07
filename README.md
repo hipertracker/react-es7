@@ -47,5 +47,6 @@ Currently just a simple example of using unit tests in React for files using ES6
 
 ## Todo
 
+* Add more [prop validation](http://facebook.github.io/react/docs/reusable-components.html) examples
 * Add  more unit tests showing [Jest](http://facebook.github.io/jest/) testing ES5/ES7 code.
 * Add [Yeoman](http://yeoman.io/) project with options to choose SASS/Less/Stylus and Bootstrap/Semantic-UI.
