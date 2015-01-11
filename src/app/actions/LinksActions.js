@@ -73,6 +73,10 @@ const data = [
     {
         "url": "http://react.rocks/",
         "title": "Collection of examples and tutorials"
+    },
+    {
+        "url": "https://reactjsnews.com/react-style-guide-patterns-i-like/",
+        "title": "React Style Guide"
     }
 ];
 
