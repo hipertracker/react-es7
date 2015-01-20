@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactRouter from 'react-router';
-import {Menu, Segment} from 'react-semantify';
+import {Menu, Segment, Section} from 'react-semantify';
 
 const RouteHandler = ReactRouter.RouteHandler;
 const Link = ReactRouter.Link;
@@ -11,7 +11,7 @@ const App = React.createClass({
             margin: 10
         };
         return (
-            <section style={styles}>
+            <Section style={styles}>
                 <Menu>
                     <Link to="home" className="item">
                         <i className="home icon"></i>
@@ -29,7 +29,7 @@ const App = React.createClass({
                         https://github.com/hipertracker/react-es7
                     </a>
                 </Segment>
-            </section>
+            </Section>
         )
     }
 });

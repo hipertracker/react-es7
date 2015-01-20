@@ -82,7 +82,7 @@ const data = [
 
 LinksActions.loadData.listen(function () {
     // here is the place for external communication with servers...
-    LinksActions.loadDataSuccess.triggerAsync(data);
+    LinksActions.loadDataSuccess(data);
 });
 
 export default LinksActions;

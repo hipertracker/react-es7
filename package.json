@@ -43,10 +43,10 @@
   },
   "dependencies": {
     "lodash": "^2.4.1",
-    "react": "*",
-    "reflux": "*",
+    "react": "0.12.2",
+    "reflux": "0.2.3",
     "react-semantify": "jessy1092/react-semantify",
-    "react-router": "^0.11.6",
+    "react-router": "0.11.6",
     "reactify": "^0.17.1",
     "rimraf": "^2.2.8"
   }
