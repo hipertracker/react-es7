@@ -2,7 +2,7 @@
 # react-es7
 
 
-Example of React + Reflux + routing + ES6 with experimental ES7 syntax + Semantic-UI
+Example of [React](http://facebook.github.io/react/) + [Reflux](https://www.npmjs.com/package/reflux) + [routing](https://github.com/rackt/react-router) + [ES6 with experimental ES7 syntax](https://6to5.org/docs/usage/experimental/) + [Semantic-UI](http://semantic-ui.com/)
 
 * All JavaScript files are transpiled with [6to5](https://6to5.org/) library with enabled [experimental ES7 syntax](https://6to5.org/features.html).
 * For using experimental ES7 code in [Jest](http://facebook.github.io/jest/docs/tutorial-react.html) tests, the project is using [my fork](https://github.com/hipertracker/6to5-jest) of `6to5-jest` package.
