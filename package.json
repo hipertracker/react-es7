@@ -1,6 +1,6 @@
 {
   "name": "react-es7",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Example of using React + Reflux + router + ES6 with experimental ES7 syntax + Jest + Semantic-UI",
   "main": "src/index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "6to5": "^1.15.0",
+    "6to5": "*",
     "6to5-jest": "hipertracker/6to5-jest",
     "broccoli": "^0.13.3",
     "broccoli-6to5-transpiler": "^0.1.1",
@@ -42,12 +42,12 @@
     "jest-cli": "^0.2.1"
   },
   "dependencies": {
-    "lodash": "^2.4.1",
-    "react": "0.12.2",
-    "reflux": "0.2.3",
+    "lodash": "*",
+    "react": "^0.12.2",
+    "react-router": "*",
     "react-semantify": "jessy1092/react-semantify",
-    "react-router": "0.11.6",
-    "reactify": "^0.17.1",
+    "reactify": "*",
+    "reflux": "*",
     "rimraf": "^2.2.8"
   }
 }
