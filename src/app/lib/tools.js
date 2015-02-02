@@ -1,5 +1,5 @@
-import * as React from 'react';
-import * as _ from 'lodash';
+import * as React from 'react'
+import * as _ from 'lodash'
 
 // mounting a React component to a selector id location
 export function mount(component, location, argv = {}) {

@@ -1,6 +1,7 @@
-import * as React from 'react';
-import UsefulLinks from './UsefulLinks';
-import {Segment} from 'react-semantify';
+import * as React from 'react'
+import {Segment} from 'react-semantify'
+
+import UsefulLinks from './UsefulLinks'
 
 const Home = React.createClass({
     render() {

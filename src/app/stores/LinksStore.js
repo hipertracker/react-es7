@@ -1,5 +1,6 @@
-import * as Reflux from 'reflux';
-import LinksActions from '../actions/LinksActions';
+import * as Reflux from 'reflux'
+
+import LinksActions from '../actions/LinksActions'
 
 const LinksStore = Reflux.createStore({
     listenables: [LinksActions],

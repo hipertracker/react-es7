@@ -1,8 +1,9 @@
-import * as React from 'react';
-import * as Reflux from 'reflux';
-import LinksActions from '../actions/LinksActions';
-import LinksStore from '../stores/LinksStore';
-import {m} from '../lib/tools';
+import * as React from 'react'
+import * as Reflux from 'reflux'
+
+import LinksActions from '../actions/LinksActions'
+import LinksStore from '../stores/LinksStore'
+import {m} from '../lib/tools'
 
 const T = React.PropTypes;
 

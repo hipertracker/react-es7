@@ -1,6 +1,6 @@
-import * as React from 'react';
-import * as ReactRouter from 'react-router';
-import {Menu, Segment, Section} from 'react-semantify';
+import * as React from 'react'
+import * as ReactRouter from 'react-router'
+import {Menu, Segment, Section} from 'react-semantify'
 
 const RouteHandler = ReactRouter.RouteHandler;
 const Link = ReactRouter.Link;
