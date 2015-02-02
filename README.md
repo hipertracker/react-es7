@@ -22,20 +22,34 @@ bower install
 
 ## Usage
 
+
+* fast processing in memory:
+
 ```
-$ broccoli serve
+broccoli serve
+```
+
+* with additional [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei):
+
+```
+broccoli serve --live-reload-port 35729
+```
+
+* with watcher and generating files:
+
+```
+broccoli-timepiece dist
+http-server dist/ -p 4200
 ```
 
 Open `http://localhost:4200`
 
-If you like to generate mangled, compressed, production build
+
+* building files for production (minified, mangled and compressed):
 
 ```
-$ BROCCOLI_ENV=production broccoli build dist
-$ http-server dist/
+BROCCOLI_ENV=production broccoli build dist
 ```
-
-and open `http://localhost:8080`
 
 Test:
 
