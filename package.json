@@ -28,6 +28,7 @@
     "6to5-jest": "hipertracker/6to5-jest",
     "broccoli": "^0.13.3",
     "broccoli-6to5-transpiler": "^0.1.1",
+    "broccoli-babel-transpiler": "^4.0.0",
     "broccoli-cli": "0.0.1",
     "broccoli-env": "0.0.1",
     "broccoli-fast-browserify": "^0.2.3",
