@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import {Segment} from 'react-semantify'
 
 const About = React.createClass({
