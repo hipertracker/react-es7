@@ -1,4 +1,4 @@
-import * as Reflux from 'reflux'
+import Reflux from 'reflux'
 
 import LinksActions from '../actions/LinksActions'
 
