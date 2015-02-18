@@ -24,7 +24,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "*",
     "babel-jest": "^4.0.0",
     "broccoli": "^0.13.3",
     "broccoli-babel-transpiler": "^4.0.0",
@@ -40,7 +39,7 @@
     "broccoli-sass": "hipertracker/broccoli-sass",
     "browserify": "^8.0.1",
     "http-server": "^0.7.4",
-    "jest-cli": "^0.2.2"
+    "jest-cli": "^0.3.0"
   },
   "dependencies": {
     "lodash": "*",
