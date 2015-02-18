@@ -1,6 +1,6 @@
 {
   "name": "react-es7",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Example of using React + Reflux + router + ES6 with experimental ES7 syntax + Jest + Semantic-UI",
   "main": "src/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "serve": "broccoli serve"
   },
   "jest": {
-    "scriptPreprocessor": "<rootDir>/node_modules/6to5-jest",
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
     "testFileExtensions": [
       "es6",
       "js"
@@ -24,23 +24,23 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "6to5": "*",
-    "6to5-jest": "hipertracker/6to5-jest",
+    "jest": "*",
+    "babel-jest": "^4.0.0",
     "broccoli": "^0.13.3",
     "broccoli-babel-transpiler": "^4.0.0",
     "broccoli-cli": "0.0.1",
     "broccoli-env": "0.0.1",
     "broccoli-fast-browserify": "^0.2.3",
     "broccoli-filter": "^0.1.10",
-    "broccoli-funnel": "^0.1.6",
+    "broccoli-funnel": "^0.1.7",
     "broccoli-gzip": "^0.2.0",
     "broccoli-merge-trees": "^0.2.1",
-    "broccoli-sass": "hipertracker/broccoli-sass",
     "broccoli-timepiece": "^0.3.0",
     "broccoli-uglify-js": "^0.1.3",
+    "broccoli-sass": "hipertracker/broccoli-sass",
     "browserify": "^8.0.1",
     "http-server": "^0.7.4",
-    "jest-cli": "^0.2.1"
+    "jest-cli": "^0.2.2"
   },
   "dependencies": {
     "lodash": "*",
