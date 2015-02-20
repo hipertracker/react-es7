@@ -39,7 +39,7 @@
     "broccoli-sass": "hipertracker/broccoli-sass",
     "browserify": "^8.0.1",
     "http-server": "^0.7.4",
-    "jest-cli": "^0.3.0"
+    "jest-cli": "^0.4.0"
   },
   "dependencies": {
     "lodash": "*",
