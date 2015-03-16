@@ -20,7 +20,7 @@ const UsefulLinks = React.createClass({
     linksUpdate(data) {
         this.setState({links: data.links});
     },
-    componentDidMount() {
+    componentWillMount() {
         LinksActions.loadData();
     },
     render() {
