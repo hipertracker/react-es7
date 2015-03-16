@@ -10,7 +10,7 @@ Example of [React](http://facebook.github.io/react/) + [Reflux](https://www.npmj
 * Unit testing is provided by [Jest](https://facebook.github.io/jest/).
 * Using [Semantic-UI](http://semantic-ui.com/) framework with React components ([react-semantify](http://react-components.com/component/react-semantify)).
 
-If for some reasons you can't or don' want to use Node for file processing, you can use [hipertracker/react-babel](https://github.com/hipertracker/react-babel). It uses only the browser, but with AMD behind. so ES6 files are transpiled only once (during ES6 module loading) and cached.
+If for some reasons you can't or don' want to use Node for file processing, you can use [hipertracker/react-babel](https://github.com/hipertracker/react-babel). It uses only the browser but with AMD. All ES6 files are transpiled only once (during module loading) and cached.
 
 ## Install
 
