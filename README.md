@@ -4,13 +4,13 @@
 
 Example of [React](http://facebook.github.io/react/) + [Reflux](https://www.npmjs.com/package/reflux) + [routing](https://github.com/rackt/react-router) + [ES6 with experimental ES7 syntax](https://6to5.org/docs/usage/experimental/) + [Semantic-UI](http://semantic-ui.com/)
 
-* All JavaScript files are transpiled with [6to5](https://6to5.org/) library with enabled [experimental ES7 syntax](https://6to5.org/features.html).
+* All JavaScript files are transpiled with [Babel](https://babeljs.io/) library with enabled [experimental ES7 syntax](http://babeljs.io/docs/usage/transformers/#es7-experimental-).
 * For using experimental ES7 code in [Jest](http://facebook.github.io/jest/docs/tutorial-react.html) tests
 * The workflow and communication between components is built using [Reflux](https://github.com/spoike/refluxjs), a slighty [improved](http://blog.krawaller.se/posts/reflux-refinement/) Flux paradigm.
 * Unit testing is provided by [Jest](https://facebook.github.io/jest/).
 * Using [Semantic-UI](http://semantic-ui.com/) framework with React components ([react-semantify](http://react-components.com/component/react-semantify)).
 
-If for some reasons you can't or don' want to use Node for file processing, you can use pure AMD  version of that project: [hipertracker/react-es7-amd](https://github.com/hipertracker/react-es7-amd). It uses only a browser.
+If for some reasons you can't or don' want to use Node for file processing, you can use [hipertracker/react-babel](https://github.com/hipertracker/react-babel). It uses only the browser, but with AMD behind. so ES6 files are transpiled only once (during ES6 module loading) and cached.
 
 ## Install
 
