@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "lodash": "*",
-    "react": "^0.12.2",
+    "react": "*",
     "react-router": "*",
     "react-semantify": "jessy1092/react-semantify",
     "reactify": "*",
