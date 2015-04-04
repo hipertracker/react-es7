@@ -10,4 +10,4 @@ const LinksStore = Reflux.createStore({
     }
 });
 
-export default LinksStore;
+export default LinksStore
