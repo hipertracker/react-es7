@@ -12,12 +12,12 @@ export function mount(component, location, argv = {}) {
         component = React.createFactory(component);
     }
     React.render(component(argv), location);
-};
+}
 
 // merging properties, used in React component for aggregating styles
 export function m() {
     let res = {};
     _.each(arguments, (arg) => arg && _.merge(res, arg));
     return res;
-};
+}
 

@@ -88,4 +88,4 @@ LinksActions.loadData.listen(function () {
     LinksActions.loadDataSuccess(data);
 });
 
-export default LinksActions;
+export default LinksActions

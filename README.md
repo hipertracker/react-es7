@@ -2,7 +2,7 @@
 # react-es7
 
 
-Example of [React](http://facebook.github.io/react/) + [Reflux](https://www.npmjs.com/package/reflux) + [routing](https://github.com/rackt/react-router) + [ES6 with experimental ES7 syntax](https://6to5.org/docs/usage/experimental/) + [Semantic-UI](http://semantic-ui.com/)
+Example of [React](http://facebook.github.io/react/) + [Reflux](https://www.npmjs.com/package/reflux) + [routing](https://github.com/rackt/react-router) + [ES6 with experimental ES7 syntax](https://babeljs.io/docs/usage/experimental/) + [Semantic-UI](http://semantic-ui.com/)
 
 * All JavaScript files are transpiled with [Babel](https://babeljs.io/) library with enabled [experimental ES7 syntax](http://babeljs.io/docs/usage/transformers/#es7-experimental-).
 * For using experimental ES7 code in [Jest](http://facebook.github.io/jest/docs/tutorial-react.html) tests
@@ -17,7 +17,6 @@ If for some reasons you can't or don' want to use Node for file processing, you 
 ```
 npm install -g broccoli-cli
 npm install
-bower install
 ```
 
 ## Usage

@@ -34,4 +34,4 @@ const App = React.createClass({
     }
 });
 
-export default App;
+export default App

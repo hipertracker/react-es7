@@ -35,7 +35,7 @@ const UsefulLinks = React.createClass({
         const style = m(styles.item, this.props.style);
         const items = this.state.links.map((item, key) =>
             <li key={key}>
-            {item.title} (<a href={item.url} target="_blank">{item.url}</a>)
+                {item.title} (<a href={item.url} target="_blank">{item.url}</a>)
             </li>);
         return (
             <div>
@@ -46,4 +46,4 @@ const UsefulLinks = React.createClass({
     }
 });
 
-export default UsefulLinks;
+export default UsefulLinks
