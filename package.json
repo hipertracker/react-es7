@@ -1,6 +1,6 @@
 {
   "name": "react-es7",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Example of using React + Reflux + router + ES6 with experimental ES7 syntax + Jest + Semantic-UI",
   "main": "src/index.js",
   "scripts": {
@@ -38,7 +38,7 @@
     "rimraf": "^2.3.3"
   },
   "dependencies": {
-    "lodash": "^3.8.0",
+    "lodash": "^3.9.3",
     "react": "^0.13.3",
     "react-router": "^0.13.3",
     "react-semantify": "^0.3.1",
