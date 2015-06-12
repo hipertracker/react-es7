@@ -69,7 +69,7 @@ npm run coverage
 ```
 
 ## Todo
-* Replace Reflux with [nuclear-js](https://github.com/optimizely/nuclear-js)
+* Replace [Reflux](https://www.npmjs.com/package/reflux) with [nuclear-js](https://github.com/optimizely/nuclear-js)
 * Add examples of [Flow](http://flowtype.org/) types checking 
 * Add more [prop validation](http://facebook.github.io/react/docs/reusable-components.html) examples
 * Add  more unit tests showing [Jest](http://facebook.github.io/jest/) testing ES5/ES7 code with [Flow](http://flowtype.org/) types checking.
