@@ -23,10 +23,15 @@ var jsFiles = new Funnel('src', {
 });
 
 // transpile ES6/7 into ES5
-jsFiles = babelTranspiler(jsFiles, {stage: 0});
+jsFiles = babelTranspiler(jsFiles, {
+    stage: 0,
+    sourceMaps: 'inline', // add sourcemaps for ES6 debugging
+    plugins: ['typecheck'] // add Flow types checking!
+});
 
 // transpile for the browser
 jsFiles = fastBrowserify(jsFiles, {
+    debug: env !== 'production', // add sourcemaps if not for production
     bundles: {
         'index.js': {
             entryPoints: ['index.js']
@@ -38,7 +43,7 @@ if (env === 'production') {
     jsFiles = uglifyJavaScript(jsFiles);
     jsFiles = gzipFiles(jsFiles, {
         extensions: ['js', 'css'],
-        keepUncompressed: true
+        keepUncompressed: false
     });
 }
 

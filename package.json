@@ -1,10 +1,10 @@
 {
   "name": "react-es7",
-  "version": "0.0.20",
+  "version": "0.1.0",
   "description": "Example of using React + Reflux + router + ES6 with experimental ES7 syntax + Jest + Semantic-UI",
   "main": "src/index.js",
   "scripts": {
-    "test": "BABEL_JEST_STAGE=1 jest",
+    "test": "BABEL_JEST_STAGE=0 jest",
     "bundle": "broccoli build dist",
     "serve": "broccoli serve"
   },
@@ -23,8 +23,9 @@
   "author": "Jaroslaw Zabiello <hipertracker@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "jest-cli": "^0.4.2",
+    "babel": "^5.5.6",
     "babel-jest": "^5.2.0",
+    "babel-plugin-typecheck": "0.0.3",
     "broccoli": "^0.16.2",
     "broccoli-babel-transpiler": "^5.0.0",
     "broccoli-env": "0.0.1",
@@ -33,8 +34,10 @@
     "broccoli-gzip": "^0.2.1",
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-sass": "^0.6.6",
+    "broccoli-source-map": "^0.2.0",
     "broccoli-timepiece": "^0.3.0",
     "broccoli-uglify-js": "^0.1.3",
+    "jest-cli": "^0.4.12",
     "rimraf": "^2.3.3"
   },
   "dependencies": {
