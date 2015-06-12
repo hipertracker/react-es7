@@ -62,8 +62,13 @@ Test and code coverage:
 $ npm test
 ```
 
-You can also see the code coverage at [http://localhost:8080/lcov-report/](http://localhost:8080/lcov-report/).
+Also code coverage in the browser:
 
+```
+cd coverage/lcov-report
+http-server
+open http://localhost:8080
+```
 
 ## Todo
 * replace Reflux with [nuclear-js](https://github.com/optimizely/nuclear-js)
