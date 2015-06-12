@@ -2,7 +2,7 @@
 # react-es7
 
 
-Example of [React](http://facebook.github.io/react/) + [Reflux](https://www.npmjs.com/package/reflux) + [routing](https://github.com/rackt/react-router) + [ES6 with experimental ES7 syntax](https://babeljs.io/docs/usage/experimental/) + [Semantic-UI](http://semantic-ui.com/)
+Example of [React](http://facebook.github.io/react/) + [Flow](http://flowtype.org/) types + [Reflux](https://www.npmjs.com/package/reflux) + [routing](https://github.com/rackt/react-router) + [ES6 with experimental ES7 syntax](https://babeljs.io/docs/usage/experimental/) + [Semantic-UI](http://semantic-ui.com/)
 
 * All JavaScript files are transpiled with [Babel](https://babeljs.io/) library with enabled [experimental ES7 syntax](http://babeljs.io/docs/usage/transformers/#es7-experimental-).
 * For using experimental ES7 code in [Jest](http://facebook.github.io/jest/docs/tutorial-react.html) tests
@@ -59,7 +59,7 @@ $ npm test
 Currently just a simple example of using unit tests in React for files using ES6/ES7 syntax.
 
 ## Todo
-
+* replace Reflux with [nuclear-js](https://github.com/optimizely/nuclear-js)
+* Add examples of Flow types checking 
 * Add more [prop validation](http://facebook.github.io/react/docs/reusable-components.html) examples
-* Add  more unit tests showing [Jest](http://facebook.github.io/jest/) testing ES5/ES7 code.
-* Add [Yeoman](http://yeoman.io/) project with options to choose SASS/Less/Stylus and Bootstrap/Semantic-UI.
+* Add  more unit tests showing [Jest](http://facebook.github.io/jest/) testing ES5/ES7 code with [Flow](http://flowtype.org/) types checking.
