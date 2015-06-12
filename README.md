@@ -62,9 +62,8 @@ Test and code coverage:
 $ npm test
 ```
 
-You can see code coverage statistics at [http://localhost:8080/lcov-report/](http://localhost:8080/lcov-report/).
+You can also see the code coverage at [http://localhost:8080/lcov-report/](http://localhost:8080/lcov-report/).
 
-Currently just a simple example of using unit tests in React for files using ES6/ES7 syntax.
 
 ## Todo
 * replace Reflux with [nuclear-js](https://github.com/optimizely/nuclear-js)
