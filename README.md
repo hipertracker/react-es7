@@ -65,9 +65,7 @@ $ npm test
 Also code coverage in the browser:
 
 ```
-cd coverage/lcov-report
-http-server
-open http://localhost:8080
+npm run coverage
 ```
 
 ## Todo

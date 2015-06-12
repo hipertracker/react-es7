@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "BABEL_JEST_STAGE=0 jest --coverage",
+    "coverage": "cd coverage/lcov-report && open http://localhost:8080 && http-server",
     "bundle": "broccoli build dist",
     "start": "broccoli serve"
   },
