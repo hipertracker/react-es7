@@ -1,13 +1,10 @@
 import React from 'react'
-import ReactRouter from 'react-router'
+import ReactRouter, {RouteHandler, Link} from 'react-router'
 import {Menu, Segment, Section} from 'react-semantify'
 
-const RouteHandler = ReactRouter.RouteHandler;
-const Link = ReactRouter.Link;
-
-const App = React.createClass({
+class App extends React.Component {
     render() {
-        const styles = {
+        const styles= {
             margin: 10
         };
         return (
@@ -32,6 +29,6 @@ const App = React.createClass({
             </Section>
         )
     }
-});
+}
 
 export default App

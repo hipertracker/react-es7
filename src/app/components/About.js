@@ -1,7 +1,7 @@
 import React from 'react'
 import {Segment} from 'react-semantify'
 
-const About = React.createClass({
+class About extends React.Component {
     render() {
         return (
             <Segment>
@@ -13,6 +13,6 @@ const About = React.createClass({
             </Segment>
         )
     }
-});
+}
 
 export default About

@@ -3,14 +3,16 @@ import {Segment} from 'react-semantify'
 
 import UsefulLinks from './UsefulLinks'
 
-const Home = React.createClass({
+class Home extends React.Component {
     render() {
         return (
-            <Segment>
-                <UsefulLinks title="React useful links"/>
-            </Segment>
+            <div>
+                <Segment>
+                    <UsefulLinks title="React useful links"/>
+                </Segment>
+            </div>
         )
     }
-});
+}
 
 export default Home
