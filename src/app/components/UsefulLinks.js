@@ -1,16 +1,14 @@
-import React from 'react'
+import React, {PropTypes} from 'react'
 import Reflux from 'reflux'
 
 import LinksActions from '../actions/LinksActions'
 import LinksStore from '../stores/LinksStore'
 import {m} from '../lib/tools'
 
-const T = React.PropTypes;
-
 const UsefulLinks = React.createClass({
     mixins: [Reflux.listenTo(LinksStore, 'linksUpdate')],
     propTypes: {
-        title: T.string.isRequired
+        title: PropTypes.string.isRequired
     },
     getInitialState() {
         return {
@@ -27,6 +25,7 @@ const UsefulLinks = React.createClass({
         if (!this.state.links.length) {
             return <span/>;
         }
+
         const styles = {
             item: {
                 paddingLeft: 30
