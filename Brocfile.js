@@ -43,7 +43,7 @@ if (env === 'production') {
     jsFiles = uglifyJavaScript(jsFiles);
     jsFiles = gzipFiles(jsFiles, {
         extensions: ['js', 'css'],
-        keepUncompressed: false
+        keepUncompressed: true
     });
 }
 
