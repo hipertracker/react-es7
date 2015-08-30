@@ -34,12 +34,6 @@ or
 npm start
 ```
 
-* with additional [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei):
-
-```
-broccoli serve --live-reload-port 35729
-```
-
 * with watcher and generating files:
 
 ```
